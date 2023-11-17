@@ -39,4 +39,4 @@ jobs:
       - name: phpstan
         run: |
           cd app
-          ./vendor/bin/phpstan analyse !$memory-limit=1G
+          ./vendor/bin/phpstan analyse --memory-limit=1G
