@@ -30,3 +30,8 @@ jobs:
         run: |
           cd app
           php artisan key:generate
+
+      - name: Directory Permissions
+        run: |
+          cd app
+          chmod -R 777 storage bootstrap/cache
