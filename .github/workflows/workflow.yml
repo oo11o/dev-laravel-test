@@ -9,14 +9,14 @@ jobs:
     runs-on: ubuntu-latest
 
     services:
-    mysql:
-    image: mysql:8.0.21
-    env:
-    MYSQL_DATABASE: posts-test
-    MYSQL_ROOT_PASSWORD: root
-    ports:
-      - 3306:3306
-    options: --health-cmd="mysqladmin ping"
+      mysql:
+        image: mysql:8.0.21
+        env:
+          MYSQL_DATABASE: posts-test
+          MYSQL_ROOT_PASSWORD: root
+        ports:
+          - 3306:3306
+        options: --health-cmd="mysqladmin ping"
 
     steps:
       - name: Setup PHP
