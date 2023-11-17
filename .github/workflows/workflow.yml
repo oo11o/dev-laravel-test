@@ -33,5 +33,5 @@ jobs:
 
       - name: Directory Permissions
         run:
-          cd
+          cd app
           chmod -R 777 storage bootstrap/cache
